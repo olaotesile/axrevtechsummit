@@ -15,7 +15,7 @@ const Footer = () => {
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="icon instagram" />
           </a>
-          <a href="mailto:your-email@gmail.com">
+          <a href="mailto:axrevtechsummit@gmail.com">
             <FaEnvelope className="icon gmail" />
           </a>
         </div>
