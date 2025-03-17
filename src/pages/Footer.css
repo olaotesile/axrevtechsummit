@@ -1,0 +1,59 @@
+.footer {
+    background-color: #000e01; /* Deep green */
+    color: #ffffff; /* Gold */
+    text-align: center;
+    padding: 20px;
+    font-family: 'Livvic', sans-serif;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.venue,
+.contact,
+.copyright {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    padding-bottom: 20px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin: 15px 0;
+}
+
+.icon {
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+/* Specific Icon Colors */
+.discord {
+    color: #ffffff;
+}
+
+.instagram {
+    color: #ffffff;
+}
+
+.gmail {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .footer-content {
+        padding: 10px;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+}

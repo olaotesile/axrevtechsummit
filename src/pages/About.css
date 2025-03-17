@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700&display=swap');
+
+/* About Section Styling */
+.about-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    background-color: #012b04; /* Deep green */
+    color: #d2e6d3;
+    padding: 50px 10%; /* Adjusted padding */
+}
+
+/* "About" Title in Top Left */
+.about-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: clamp(1.2rem, 3vw, 1.8rem); /* Responsive font size */
+    font-family: 'Livvic', sans-serif;
+    font-weight: bold;
+    color: #FFD700;
+    padding-left: 30px;
+}
+
+/* Content Styling */
+.about-content {
+    max-width: 70%;
+}
+
+/* Text Styling */
+.about-text {
+    font-size: clamp(0.9rem, 2vw, 1.1rem); /* Responsive font size */
+    line-height: 1.6;
+    text-align: left;
+    padding-top: 40px;
+    width: 100%;
+    font-family: 'Livvic', sans-serif;
+}
+
+/* Responsive Styling */
+@media (max-width: 1224px) {
+    .about-section {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 5%; /* Reduced padding for smaller screens */
+    }
+
+    .about-title {
+        top: 15px;
+        left: 15px;
+        font-size: clamp(1rem, 2.5vw, 1.5rem); /* Smaller font size */
+        padding-left: 20px;
+    }
+
+    .about-content {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .about-text {
+        font-size: clamp(0.8rem, 2vw, 1rem); /* Even smaller font size */
+        padding-top: 30px; /* Reduced padding */
+    }
+}
+
+/* For Mobile Screens */
+@media (max-width: 768px) {
+    .about-section {
+        min-height: 50vh; /* Reduced height for mobile */
+        padding: 30px 5%; /* Further reduced padding */
+    }
+
+    .about-title {
+        top: 10px;
+        left: 10px;
+        font-size: clamp(1.2rem, 2.1vw, 1.2rem); /* Smallest font size */
+        padding-left: 15px;
+    }
+
+    .about-text {
+        font-size: clamp(1rem, 2vw, 1rem); /* Very small font size */
+        padding-top: 20px; /* Minimal padding */
+    }
+}
