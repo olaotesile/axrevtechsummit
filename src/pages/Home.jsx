@@ -49,7 +49,7 @@ const Home = () => {
         <p className="subtext">
           Join innovators, engineers, and entrepreneurs at the largest Tech Summit in Ekiti as we explore the future of technology, networking, and groundbreaking ideas.
         </p>
-        <button className="register-btn">Register</button>
+        <button className="register-btn"><a href="https://docs.google.com/forms/d/1pBaViC0xxw_Nz-Mvbaw3J5SO4hFVSl9_JzxSbILXd6k"></a>Register</button>
       </div>
 
       {/* Powered By Section */}

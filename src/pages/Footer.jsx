@@ -19,7 +19,7 @@ const Footer = () => {
             <FaEnvelope className="icon gmail" />
           </a>
         </div>
-        <p className="copyright">© 2025 Axrev Tech Summit. All rights reserved. <br /><a href="olaotesile.vercel.app">olaotesile.vercel.app</a></p>
+        <p className="copyright">© 2025 Axrev Tech Summit. All rights reserved. <br /><a href="https://olaotesile.vercel.app" target="_blank" rel="noopener noreferrer">olaotesile.vercel.app</a></p>
       </div>
     </footer>
   );
