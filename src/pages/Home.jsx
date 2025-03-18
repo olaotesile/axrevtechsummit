@@ -56,7 +56,7 @@ const Home = () => {
 
       {/* Powered By Section */}
       <div className="powered-section">
-        <p className="powered-text">Powered By</p>
+        <p className="powered-text">Hosted By</p>
         <p className="powered-name">Ola Otesile</p>
         <p className="collab-text">In Collaboration With</p>
         
