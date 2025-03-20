@@ -144,9 +144,11 @@
 }
 
 .collab-logo {
-    width: clamp(70px, 10vw, 100px);
+    width: min(12vw, 140px);  /* Increased from 10vw to 12vw for more size */
+    max-width: 140px;         /* Increased max width from 120px to 140px */
     height: auto;
 }
+
 
 /* ---------- RESPONSIVE MEDIA QUERIES ---------- */
 
@@ -228,7 +230,7 @@
     }
 
     .collab-logo {
-        width: 80px;
+        width: 90px;
     }
 }
 

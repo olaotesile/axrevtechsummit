@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css"; // Ensure this file exists
 import Logo from "../assets/Artboard 1(White).png";
+import Logo1 from "../assets/download-removebg-preview (1).png";
+import Logo2 from "../assets/amobern-logo-nobg.png";
 
 
 const Home = () => {
@@ -62,8 +64,8 @@ const Home = () => {
         
         {/* Logos Section */}
         <div className="logos">
-          <img src="/path-to-logo1.png" alt="Logo 1" className="collab-logo" />
-          <img src="/path-to-logo2.png" alt="Logo 2" className="collab-logo" />
+          <img src={Logo1} alt="Logo 1" className="collab-logo" />
+          <img src={Logo2} alt="Logo 2" className="collab-logo" />
         </div>
       </div>
 
