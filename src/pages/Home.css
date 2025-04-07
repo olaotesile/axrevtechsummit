@@ -1,270 +1,275 @@
 /* General styling */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Home Page Styling */
 .homepage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    min-height: 130vh; /* Make the page 30% longer */
-    background-image: url('https://i.pinimg.com/474x/ad/fa/be/adfabeb7911053ec5a0671871e3b2655.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 20px;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 130vh; /* Make the page 30% longer */
+  background-image: url("https://i.pinimg.com/474x/ad/fa/be/adfabeb7911053ec5a0671871e3b2655.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header (Logo + Title) */
 .header {
-    display: flex;
-    justify-content: space-between; /* Keeps logo on the left and other content on the right */
-    align-items: center;
-    width: 90%; /* Adjusted width for better spacing */
-    max-width: 1200px;
-    padding: 20px 0; /* Adds vertical spacing */
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%); /* Centers the header horizontally */
+  display: flex;
+  justify-content: space-between; /* Keeps logo on the left and other content on the right */
+  align-items: center;
+  width: 90%; /* Adjusted width for better spacing */
+  max-width: 1200px;
+  padding: 20px 0; /* Adds vertical spacing */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centers the header horizontally */
 }
 
 .logo img {
-    width: clamp(150px, 15vw, 200px); /* Responsive width */
-    height: auto;
-    margin: 0;
-    padding: 0;
+  width: clamp(150px, 15vw, 200px); /* Responsive width */
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 
 /* Main Content */
 .main-content {
-    padding-top: 200px; /* Default padding for desktop */
-    width: 90%; /* Keep the width reasonable */
-    max-width: 1000px;
+  padding-top: 200px; /* Default padding for desktop */
+  width: 90%; /* Keep the width reasonable */
+  max-width: 1000px;
 }
 
 .theme {
-    font-size: clamp(24px, 5vw, 36px); /* Adjusted for better scaling */
-    font-weight: bold;
-    line-height: 1;
-    color: black;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
+  font-size: clamp(24px, 5vw, 36px); /* Adjusted for better scaling */
+  font-weight: bold;
+  line-height: 1;
+  color: black;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .theme-main {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2em; /* Dynamic font sizing */
-    margin: 0;
-    padding: 0;
-    line-height: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 1.2em; /* Dynamic font sizing */
+  margin: 0;
+  padding: 0;
+  line-height: 0;
 }
 
 .theme-sub {
-    font-size: 1.6em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    margin: 0 auto; /* Center horizontally */
-    padding-bottom: 35px;
-    line-height: 1;
-    display: inline-block; /* Ensures it wraps neatly under */
-    text-align: center;
+  font-size: 1.6em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin: 0 auto; /* Center horizontally */
+  padding-bottom: 35px;
+  line-height: 1;
+  display: inline-block; /* Ensures it wraps neatly under */
+  text-align: center;
 }
 
 .subtext {
-    font-size: clamp(14px, 2vw, 18px);
-    margin-top: 15px;
-    opacity: 0.8;
-    max-width: 900px;
+  font-size: clamp(14px, 2vw, 18px);
+  margin-top: 15px;
+  opacity: 0.8;
+  max-width: 900px;
 }
 
 /* Register Button */
 .register-btn {
-    margin-top: 20px;
-    padding: 12px 30px;
-    font-size: clamp(14px, 2vw, 18px);
-    font-weight: bold;
-    background: #012b01;
-    color: white;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: 0.3s ease;
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: bold;
+  background: #012b01;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .register-btn:hover {
-    background: #045e04;
-    color: #ffffff;
+  background: #045e04;
+  color: #ffffff;
 }
 
 /* Powered By Section */
 .powered-section {
-    margin-top: 10px;
-    text-align: center;
-    width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
 }
 
 .powered-text,
 .collab-text {
-    font-size: clamp(14px, 2vw, 18px);
-    font-weight: bold;
-    color: #9e9e9e;
-    margin: 5px 0;
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: bold;
+  color: #9e9e9e;
+  margin: 5px 0;
 }
 
 .powered-name {
-    font-size: clamp(1.5em, 3vw, 2em);
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
-    color: #000000;
-    margin-bottom: 10px;
+  font-size: clamp(1.5em, 3vw, 2em);
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
 }
 
 /* Logos */
 .logos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
-    flex-wrap: wrap; /* Ensures logos wrap on smaller screens */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  flex-wrap: wrap; /* Ensures logos wrap on smaller screens */
 }
 
 .collab-logo {
-    width: min(12vw, 140px);  /* Increased from 10vw to 12vw for more size */
-    max-width: 140px;         /* Increased max width from 120px to 140px */
-    height: auto;
+  width: min(12vw, 140px); /* Increased from 10vw to 12vw for more size */
+  max-width: 140px; /* Increased max width from 120px to 140px */
+  height: auto;
+  object-fit: contain;
 }
 
 /* ---------- RESPONSIVE MEDIA QUERIES ---------- */
 
 /* For tablets and medium screens */
 @media (max-width: 1024px) {
-    .header {
-        flex-direction: row; /* Keep the logo and other elements in a row */
-        justify-content: space-between; /* Align items properly */
-        width: 90%; /* Reduced width */
-    }
+  .header {
+    flex-direction: row; /* Keep the logo and other elements in a row */
+    justify-content: space-between; /* Align items properly */
+    width: 90%; /* Reduced width */
+  }
 
-    .logo img {
-        width: clamp(120px, 12vw, 180px); /* Slightly smaller logo */
-    }
+  .logo img {
+    width: clamp(120px, 12vw, 180px); /* Slightly smaller logo */
+  }
 
-    /* Adjust font size while keeping structure */
-    .theme {
-        font-size: clamp(28px, 5vw, 40px); /* Slightly reduced for tablets */
-    }
+  /* Adjust font size while keeping structure */
+  .theme {
+    font-size: clamp(28px, 5vw, 40px); /* Slightly reduced for tablets */
+  }
 
-    .theme-main {
-        font-size: clamp(1em, 2.5vw, 1.3em);
-    }
+  .theme-main {
+    font-size: clamp(1em, 2.5vw, 1.3em);
+  }
 
-    .theme-sub {
-        font-size: clamp(1.2em, 3.5vw, 1.8em);
-    }
+  .theme-sub {
+    font-size: clamp(1.2em, 3.5vw, 1.8em);
+  }
 }
 
 /* For mobile screens */
 @media (max-width: 768px) {
-    .homepage {
-        padding: 10px;
-        justify-content: flex-start;
-        min-height: 130vh; /* Keep the page 30% longer */
-    }
+  .homepage {
+    padding: 10px;
+    justify-content: flex-start;
+    min-height: 130vh; /* Keep the page 30% longer */
+  }
 
-    .header {
-        flex-direction: row; /* Keep the logo and other elements in a row */
-        justify-content: space-between; /* Align items properly */
-        width: 95%; /* Adjusted for mobile */
-        padding: 10px 0; /* Reduced padding */
-    }
+  .header {
+    flex-direction: row; /* Keep the logo and other elements in a row */
+    justify-content: space-between; /* Align items properly */
+    width: 95%; /* Adjusted for mobile */
+    padding: 10px 0; /* Reduced padding */
+  }
 
-    .logo img {
-        width: clamp(120px, 20vw, 180px);
-    }
+  .logo img {
+    width: clamp(120px, 20vw, 180px);
+  }
 
-    .main-content {
-        padding-top: 120px; /* Reduced padding for mobile */
-        width: 95%; /* Adjusted for mobile */
-        margin-top: 40px; /* Space for the header */
-    }
+  .main-content {
+    padding-top: 120px; /* Reduced padding for mobile */
+    width: 95%; /* Adjusted for mobile */
+    margin-top: 40px; /* Space for the header */
+  }
 
-    /* Increase font sizes for better readability on mobile */
-    .theme {
-        font-size: clamp(24px, 6vw, 36px); /* Ensure "The Tech Rena..." is legible */
-    }
+  /* Increase font sizes for better readability on mobile */
+  .theme {
+    font-size: clamp(
+      24px,
+      6vw,
+      36px
+    ); /* Ensure "The Tech Rena..." is legible */
+  }
 
-    .theme-main {
-        font-size: clamp(1em, 3vw, 1.2em);
-    }
+  .theme-main {
+    font-size: clamp(1em, 3vw, 1.2em);
+  }
 
-    .theme-sub {
-        font-size: clamp(1.2em, 4vw, 1.6em);
-    }
+  .theme-sub {
+    font-size: clamp(1.2em, 4vw, 1.6em);
+  }
 
-    .register-btn {
-        padding: 10px 25px;
-        font-size: clamp(14px, 3vw, 18px);
-    }
+  .register-btn {
+    padding: 10px 25px;
+    font-size: clamp(14px, 3vw, 18px);
+  }
 
-    .powered-section {
-        margin-top: 30px;
-    }
+  .powered-section {
+    margin-top: 30px;
+  }
 
-    .logos {
-        gap: 10px;
-    }
+  .logos {
+    gap: 10px;
+  }
 
-    .collab-logo {
-        width: 90px;
-    }
+  .collab-logo {
+    width: 90px;
+  }
 }
 
 /* Countdown Box */
 .countdown-box {
-    margin-top: 40px;
-    text-align: center;
-    background: black;
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    display: inline-block;
-    font-size: 1.5em;
-    font-weight: bold;
+  margin-top: 40px;
+  text-align: center;
+  background: black;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 /* Countdown Timer */
 .countdown-timer {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    font-size: 1.2em;
-    font-weight: bold;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 /* Adjust font size for smaller screens */
 @media (max-width: 768px) {
-    .countdown-box {
-        font-size: 1.2em;
-        padding: 10px;
-    }
-    
-    .countdown-timer {
-        font-size: 1em;
-    }
+  .countdown-box {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  .countdown-timer {
+    font-size: 1em;
+  }
 }
 
 /* NEW ANIMATIONS ADDED BELOW THIS LINE */
@@ -283,13 +288,16 @@
 
 @keyframes glow {
   0% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 25px #00ff00, 0 0 30px #00ff00, 0 0 35px #00ff00;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ff00, 0 0 20px #00ff00,
+      0 0 25px #00ff00, 0 0 30px #00ff00, 0 0 35px #00ff00;
   }
   50% {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ff00,
+      0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
   }
   100% {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 25px #00ff00, 0 0 30px #00ff00, 0 0 35px #00ff00;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ff00, 0 0 20px #00ff00,
+      0 0 25px #00ff00, 0 0 30px #00ff00, 0 0 35px #00ff00;
   }
 }
 
@@ -322,6 +330,3 @@
 .powered-section {
   animation-delay: 0.8s;
 }
-
-
-
