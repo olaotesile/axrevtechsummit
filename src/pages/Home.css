@@ -17,8 +17,8 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  min-height: 130vh; /* Make the page 30% longer */
-  background-image: url("https://i.pinimg.com/474x/ad/fa/be/adfabeb7911053ec5a0671871e3b2655.jpg");
+  min-height: 130vh; 
+  background-image: url("src\assets\axrev refined image.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -26,6 +26,7 @@
   text-align: center;
   padding: 20px;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  backdrop-filter: blur(25px) ;
 }
 
 /* Header (Logo + Title) */

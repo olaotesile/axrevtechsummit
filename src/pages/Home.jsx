@@ -4,6 +4,7 @@ import Logo from "../assets/Artboard 1(White).png";
 import Logo1 from "../assets/download-removebg-preview (1).png";
 import Logo2 from "../assets/amobern-logo-nobg.png";
 import Logo3 from "../assets/Joji-Logo-Transparent-Purple@300x.png";
+import backgroundImage from "../assets/axrev refined image.png";
 
 const Home = () => {
   const calculateTimeLeft = () => {
@@ -36,7 +37,12 @@ const Home = () => {
   const { days, hours, minutes, secs } = formatTime(timeLeft);
 
   return (
-    <div className="homepage">
+    <div
+      className="homepage"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+      }}
+    >
       {/* Header */}
       <div className="header">
         <div className="logo">
