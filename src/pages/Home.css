@@ -143,6 +143,17 @@
   max-width: 1000px;
 }
 
+
+.big-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: relative; /* For absolute positioning of child elements */
+}
+
 .theme {
   font-size: clamp(24px, 5vw, 36px); /* Adjusted for better scaling */
   font-weight: bold;

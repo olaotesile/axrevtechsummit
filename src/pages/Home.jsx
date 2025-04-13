@@ -71,7 +71,7 @@ const Home = () => {
         </a>
       </div>
 
-      <div style={{position: 'absolute', zIndex: 5}}>
+      <div className="big-div" style={{position: 'absolute', zIndex: 5}}>
         {/* Main Content */}
         <div className="main-content">
           <h1 className="theme">
