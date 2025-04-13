@@ -10,6 +10,73 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Navigation Header */
+.nav-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 40px;
+  padding-top: 40px;
+  z-index: 1000;
+}
+
+.nav-logo img {
+  height: 140px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #012b01;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #045e04;
+}
+
+.nav-register-btn {
+  background-color: #012b01;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-register-btn:hover {
+  background-color: #045e04;
+}
+
+/* Push page content down to not get hidden behind fixed header */
+.main-content {
+  padding-top: 120px;
+}
+
 /* Home Page Styling */
 .homepage {
   display: flex;
@@ -17,7 +84,7 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  min-height: 130vh; 
+  min-height: 130vh;
   background-image: url("src\assets\axrev refined image.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,8 +92,27 @@
   color: rgb(0, 0, 0);
   text-align: center;
   padding: 20px;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  backdrop-filter: blur(25px) ;
+  overflow-x: hidden;
+  position: relative; /* Prevent horizontal scrolling */
+}
+
+.homepage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Light overlay for better text visibility */
+  z-index: 1;
+  backdrop-filter: blur(
+    5px
+  ); /* Optional: adds a blur effect to the background */
 }
 
 /* Header (Logo + Title) */
@@ -52,7 +138,7 @@
 
 /* Main Content */
 .main-content {
-  padding-top: 200px; /* Default padding for desktop */
+  padding-top: 100px; /* Default padding for desktop */
   width: 90%; /* Keep the width reasonable */
   max-width: 1000px;
 }
@@ -62,25 +148,26 @@
   font-weight: bold;
   line-height: 1;
   color: black;
-  text-align: left;
+  text-align: center;
   display: flex;
   flex-direction: column;
 }
 
 .theme-main {
-  font-family: "Playfair Display", serif;
-  font-size: 1.2em; /* Dynamic font sizing */
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6em; /* Dynamic font sizing */
   margin: 0;
   padding: 0;
   line-height: 0;
 }
 
 .theme-sub {
-  font-size: 1.6em;
+  font-size: 1em;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+  color: #2e2e2e;
   margin: 0 auto; /* Center horizontally */
-  padding-bottom: 35px;
+  padding-bottom: 10px;
   line-height: 1;
   display: inline-block; /* Ensures it wraps neatly under */
   text-align: center;
