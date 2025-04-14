@@ -297,7 +297,7 @@
   }
 
   .main-content {
-    padding-top: 90px; /* Reduced padding for mobile */
+    padding-top: 5px; /* Reduced padding for mobile */
     width: 95%; /* Adjusted for mobile */
     margin-top: 40px; /* Space for the header */
   }
