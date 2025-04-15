@@ -3,7 +3,6 @@ import "./Home.css";
 import Logo from "../assets/Artboard 1(White).png";
 import Logo1 from "../assets/download-removebg-preview (1).png";
 import Logo2 from "../assets/amobern-logo-nobg.png";
-import Logo3 from "../assets/Joji-Logo-Transparent-Purple@300x.png";
 import backgroundImage from "../assets/axrev refined image.png";
 
 const Home = () => {
@@ -104,7 +103,6 @@ const Home = () => {
           <div className="logos">
             <img src={Logo1} alt="Logo 1" className="collab-logo" />
             <img src={Logo2} alt="Logo 2" className="collab-logo" />
-            <img src={Logo3} alt="Logo 3" className="collab-logo" />
           </div>
         </div>
 
