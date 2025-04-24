@@ -14,7 +14,7 @@ const Schedule = () => {
         </div>
         <div className="schedule-item">
           <span className="schedule-time">10:30 – 10:35 AM</span>
-          <span className="schedule-event">Opening by MC (Samuel)</span>
+          <span className="schedule-event">Opening by MC</span>
         </div>
         <div className="schedule-item">
           <span className="schedule-time">10:35 – 10:45 AM</span>
