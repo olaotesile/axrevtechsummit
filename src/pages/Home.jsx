@@ -7,7 +7,7 @@ import backgroundImage from "../assets/axrev refined image.png";
 
 const Home = () => {
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2025-04-26T00:00:00");
+    const targetDate = new Date("2025-04-26T09:30:00");
     const now = new Date();
     const difference = Math.max(0, Math.floor((targetDate - now) / 1000));
     return difference;
