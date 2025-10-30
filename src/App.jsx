@@ -1005,7 +1005,7 @@ const App = () => {
               margin: "0 auto",
             }}
           >
-            Over 200 students. 10+ inspiring speakers. Countless groundbreaking
+            Over 400 students. 10+ inspiring speakers. Countless groundbreaking
             ideas.
           </p>
         </div>
@@ -1098,20 +1098,20 @@ const App = () => {
             style={{
               display: "inline-block",
               fontSize: "1.05rem",
-              fontWeight: 600,
-              color: "#4ade80",
+              fontWeight: 100,
+              color: "#ffffffff",
               textDecoration: "none",
               padding: "0.5rem 0",
               borderBottom: "1px solid transparent",
               transition: "border-color 0.3s ease, color 0.3s ease",
             }}
             onMouseEnter={(e) => {
-              e.target.style.borderColor = "#4ade80";
-              e.target.style.color = "#4ade80";
+              e.target.style.borderColor = "#ffffffff";
+              e.target.style.color = "#ffffffff";
             }}
             onMouseLeave={(e) => {
               e.target.style.borderColor = "transparent";
-              e.target.style.color = "#4ade80";
+              e.target.style.color = "#ffffffff";
             }}
           >
             View full photo gallery
