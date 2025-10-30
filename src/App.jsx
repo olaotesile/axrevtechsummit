@@ -70,10 +70,9 @@ const App = () => {
     "Grazac",
     "NUESA",
     "Nexr",
-    "TechHub",
-    "InnovateLab",
-    "StartupNG",
-    "CodeCamp",
+    "Unulax",
+    "Chainroll",
+    "Euretix",
   ];
 
   const features = [
