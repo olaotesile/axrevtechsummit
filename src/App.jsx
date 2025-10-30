@@ -222,11 +222,13 @@ const App = () => {
             src={Logo}
             alt="Axrev Tech Summit"
             style={{
-              height: scrolled ? "50px" : "70px",
+              height: scrolled ? "40px" : "50px", // slightly smaller for mobile harmony
               transition: "height 0.3s ease",
             }}
           />
         </div>
+
+        {/* Nav links — hidden on mobile */}
         <ul
           className="nav-links"
           style={{
@@ -269,11 +271,14 @@ const App = () => {
             );
           })}
         </ul>
+
         <a href={registerLink} target="_blank" rel="noopener noreferrer">
           <button
             style={{
               ...styles.button,
               borderRadius: "18px",
+              padding: "0.65rem 1.5rem",
+              fontSize: "0.95rem",
             }}
             onMouseEnter={(e) => {
               e.target.style.backgroundColor = "#2dd47d";
@@ -285,6 +290,25 @@ const App = () => {
             Register Now
           </button>
         </a>
+
+        {/* Responsive styles */}
+        <style>{`
+          @media (max-width: 768px) {
+            header {
+              padding: ${scrolled ? "0.8rem 5%" : "1rem 5%"} !important;
+            }
+            .nav-links {
+              display: none !important;
+            }
+            header > div:first-child img {
+              height: ${scrolled ? "36px" : "44px"} !important;
+            }
+            header > a > button {
+              padding: 0.6rem 1.25rem !important;
+              font-size: 0.9rem !important;
+            }
+          }
+        `}</style>
       </header>
 
       {/* Hero Section */}
@@ -293,11 +317,11 @@ const App = () => {
         className="hero-main"
         style={{
           display: "flex",
-          alignItems: "flex-end", // 👈 pushes content toward bottom
+          alignItems: "flex-end",
           justifyContent: "space-between",
           minHeight: "100vh",
-          paddingTop: "60px", // 👈 reduced from 120px (just enough to clear header)
-          paddingBottom: "60px", // optional: tighten bottom spacing
+          paddingTop: "60px",
+          paddingBottom: "60px",
           paddingLeft: "8%",
           paddingRight: "8%",
           maxWidth: "1400px",
@@ -305,6 +329,7 @@ const App = () => {
           gap: "6rem",
         }}
       >
+        {/* Left Column: Text Content */}
         <div
           className="hero-content fade-in"
           style={{
@@ -347,7 +372,7 @@ const App = () => {
             }}
           >
             Connecting innovators, builders, and visionaries across Ekiti and
-            beyond. Join 9,000+ attendees in shaping Nigeria's tech future.
+            beyond. Join 1,000+ attendees in shaping Nigeria's tech future.
           </p>
 
           <div
@@ -402,7 +427,15 @@ const App = () => {
             </button>
           </div>
 
-          <div style={{ display: "flex", gap: "2rem" }}>
+          {/* Countdown Timer */}
+          <div
+            style={{
+              display: "flex",
+              gap: "1.5rem",
+              flexWrap: "wrap",
+              justifyContent: "flex-start", // aligns with text (not center)
+            }}
+          >
             {[
               { val: days, label: "Days" },
               { val: hours, label: "Hours" },
@@ -412,7 +445,7 @@ const App = () => {
               <div key={i} className="countdown-box">
                 <div
                   style={{
-                    fontSize: "2.5rem",
+                    fontSize: "2.25rem",
                     fontWeight: 600,
                     color: "#ffffff",
                     marginBottom: "0.25rem",
@@ -423,10 +456,10 @@ const App = () => {
                 </div>
                 <div
                   style={{
-                    fontSize: "0.75rem",
+                    fontSize: "0.7rem",
                     color: "rgba(255, 255, 255, 0.5)",
                     textTransform: "uppercase",
-                    letterSpacing: "1px",
+                    letterSpacing: "0.8px",
                     fontWeight: 500,
                   }}
                 >
@@ -437,15 +470,17 @@ const App = () => {
           </div>
         </div>
 
+        {/* Right Column: Image Box */}
         <div
           className="hero-image-box fade-in"
           style={{
             width: "400px",
-            height: "480px", // ✅ reduced height
+            height: "480px",
             backgroundColor: "#2a2a2a",
             borderRadius: "8px",
             overflow: "hidden",
             border: "1px solid rgba(255, 255, 255, 0.1)",
+            flexShrink: 0, // prevents shrinking on small screens
           }}
         >
           <img
@@ -458,6 +493,59 @@ const App = () => {
             }}
           />
         </div>
+
+        {/* Responsive Styles (place once at bottom of component, or in global styles) */}
+        <style>{`
+    @media (max-width: 968px) {
+      .hero-main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: center;
+        gap: 2.5rem;
+      }
+      .hero-content {
+        align-items: center;
+        max-width: 100%;
+      }
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+      .hero-content p {
+        font-size: 1.05rem;
+      }
+      .hero-image-box {
+        width: 100%;
+        max-width: 400px;
+        height: 450px;
+      }
+      .hero-content > div[style*="flex"] {
+        justify-content: center !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .countdown-box > div:first-child {
+        font-size: 1.75rem;
+      }
+      .countdown-box > div:last-child {
+        font-size: 0.65rem;
+        letter-spacing: 0.5px;
+      }
+    }
+    @media (max-width: 480px) {
+      .countdown-box > div:first-child {
+        font-size: 1.5rem;
+      }
+      .countdown-box > div:last-child {
+        font-size: 0.6rem;
+      }
+      .hero-main {
+        padding-top: 100px;
+        padding-bottom: 50px;
+      }
+    }
+  `}</style>
       </main>
 
       {/* Features Section */}
