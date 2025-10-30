@@ -800,7 +800,7 @@ const App = () => {
             }}
           >
             <FaCalendar />
-            <span>April 26, 2025 • 9:30 AM</span>
+            <span>April 26, 2026 • 9:30 AM</span>
           </div>
 
           <h2
@@ -811,7 +811,7 @@ const App = () => {
               fontWeight: 900,
             }}
           >
-            2025 Theme
+            2026 Theme
           </h2>
           <p
             style={{ fontSize: "1.3rem", opacity: 0.85, marginBottom: "3rem" }}
