@@ -1142,7 +1142,7 @@ const App = () => {
               <img
                 src={Logo}
                 alt="Axrev Tech Summit"
-                style={{ height: "40px", marginBottom: "1rem" }}
+                style={{ height: "80px", marginBottom: "0rem" }}
               />
               <p style={{ fontSize: "1rem", opacity: 0.85, lineHeight: 1.6 }}>
                 Empowering Nigeria's next generation of tech innovators and
