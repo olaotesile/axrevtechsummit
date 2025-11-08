@@ -474,7 +474,7 @@ const App = () => {
         <div
           className="hero-image-box fade-in"
           style={{
-            width: "400px",
+            width: "500px",
             height: "480px",
             backgroundColor: "#2a2a2a",
             borderRadius: "8px",
