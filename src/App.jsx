@@ -80,7 +80,7 @@ const App = () => {
       icon: <FaUsers />,
       title: "Networking",
       description:
-        "Connect with industry leaders, investors, and fellow innovators",
+        "Connect with industry leaders, investors, and fellow innovators.",
       image: "networking.jpg",
     },
     {
@@ -1052,8 +1052,8 @@ const App = () => {
                     {item === 1
                       ? "Axrev Hoodie"
                       : item === 2
-                      ? "Axrev Sweater"
-                      : "Axrev Tee"}
+                        ? "Axrev Sweater"
+                        : "Axrev Tee"}
                   </div>
                   <div style={{ color: "#6b7280", fontSize: "0.95rem" }}>
                     {item === 1 ? "₦8,000" : item === 2 ? "₦6,500" : "₦4,000"}
