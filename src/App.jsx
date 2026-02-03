@@ -862,7 +862,7 @@ const App = () => {
                 fontWeight: 400,
               }}
             >
-              The Axrev Tech Summit is an initiative launched by Ola Otesile to
+              The Axrev Tech Summit is an initiative launched by Olamiposi Otesile to
               revolutionize Nigeria's tech landscape. This event is designed to
               empower aspiring technologists, engineers, and entrepreneurs with
               the knowledge, mentorship, and opportunities needed to drive
@@ -1339,7 +1339,7 @@ const App = () => {
                 onMouseEnter={(e) => (e.target.style.color = "#4ade80")} // your green on hover
                 onMouseLeave={(e) => (e.target.style.color = "#9c88ff")}
               >
-                Ola Otesile
+                Olamiposi Otesile
               </a>
             </p>
           </div>
