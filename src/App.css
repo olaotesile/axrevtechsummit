@@ -54,6 +54,7 @@
   margin: 0;
   display: grid;
   grid-template-columns: 1fr auto auto;
+  gap: 2rem;
   align-items: center;
   color: #111111;
   padding: 1.25rem 1.5rem; /* Gives the text elements nice breathing room inside the bar */
