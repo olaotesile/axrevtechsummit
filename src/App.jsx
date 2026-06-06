@@ -267,7 +267,7 @@ function App() {
                 <div>
                   <h2>Eureses Community Summit 2026</h2>
                   <p className="event-meta">
-                    December 5, 2026 — Lagos, Nigeria
+                    June 17, 2026 — Lagos, Nigeria
                   </p>
                 </div>
                 <span className="event-badge">
