@@ -4,7 +4,6 @@ import "./App.css";
 
 const navItems = [
   { label: "Community", href: "#community" },
-  { label: "Events", href: "#events" },
   { label: "About", href: "#about" },
 ];
 
@@ -65,30 +64,9 @@ const featureItems = [
 ];
 
 const joinUrl = "https://chat.whatsapp.com/G8GeWyKROokE7piDwaMlB0?mode=gi_t";
-const registerUrl = joinUrl;
-// Fixed date: June 17, 2026
-const summitDate = new Date("2026-06-17T10:00:00+01:00");
-const summitThemeTags = [
-  { label: "Mindset", tone: "amber" },
-  { label: "Engineering", tone: "blue" },
-  { label: "Design", tone: "rose" },
-  { label: "The future you were not shown", tone: "green" },
-];
-
-function getCountdownParts(targetDate) {
-  const diff = Math.max(0, targetDate.getTime() - Date.now());
-  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-  const minutes = Math.floor((diff / (1000 * 60)) % 60);
-  const seconds = Math.floor((diff / 1000) % 60);
-
-  return { days, hours, minutes, seconds };
-}
-
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [carouselProgress, setCarouselProgress] = useState(1);
-  const [countdown, setCountdown] = useState(() => getCountdownParts(summitDate));
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
@@ -112,15 +90,7 @@ function App() {
     };
   }, []);
 
-  useEffect(() => {
-    const intervalId = window.setInterval(() => {
-      setCountdown(getCountdownParts(summitDate));
-    }, 1000);
 
-    return () => {
-      window.clearInterval(intervalId);
-    };
-  }, []);
 
   const closeMenu = () => setMenuOpen(false);
 
@@ -256,63 +226,7 @@ function App() {
           </div>
         </section>
 
-        <section className="events-section" id="events">
-          <div className="events-shell">
-            <div className="events-header">
-              <p className="events-kicker">Events</p>
-            </div>
 
-            <article className="event-card">
-              <div className="event-card-top">
-                <div>
-                  <h2>Eureses Community Summit 2026</h2>
-                  <p className="event-meta">
-                    June 17, 2026 — Lagos, Nigeria
-                  </p>
-                </div>
-                <span className="event-badge">
-                  Endorsed by the Ekiti State Commissioner for Innovation and
-                  Digital Economy
-                </span>
-              </div>
-
-              <div className="countdown-grid" aria-label="Countdown to event">
-                {[
-                  { label: "Days", value: countdown.days },
-                  { label: "Hours", value: countdown.hours },
-                  { label: "Minutes", value: countdown.minutes },
-                  { label: "Seconds", value: countdown.seconds },
-                ].map((item) => (
-                  <div key={item.label} className="countdown-cell">
-                    <strong>{String(item.value).padStart(2, "0")}</strong>
-                    <span>{item.label}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="event-tags">
-                {summitThemeTags.map((tag) => (
-                  <span
-                    key={tag.label}
-                    className={`event-tag event-tag-${tag.tone}`}
-                  >
-                    {tag.label}
-                  </span>
-                ))}
-              </div>
-
-              <a
-                href={registerUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="event-link"
-              >
-                Register
-                <FaArrowRight />
-              </a>
-            </article>
-          </div>
-        </section>
       </main>
 
       <footer className="site-footer">
