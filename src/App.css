@@ -63,10 +63,19 @@
 }
 
 .nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-family: "DM Sans", sans-serif;
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: -0.04em;
+}
+
+.nav-logo {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-center {

@@ -98,7 +98,10 @@ function App() {
     <div className="page-shell">
       <header className="site-header">
         <nav className="top-nav" aria-label="Primary">
-          <div className="nav-brand">Eureses Community</div>
+          <div className="nav-brand">
+            <img src="/logo.png" alt="Eureses Community Logo" className="nav-logo" />
+            Eureses Community
+          </div>
 
           <div className="nav-center">
             {navItems.map((item) => (
